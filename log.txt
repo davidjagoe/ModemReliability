@@ -1,0 +1,122 @@
+2012-06-11 10:42:37,000 [101974058] INFO  ModemReliabilityTest.Program - Starting
+2012-06-11 10:42:38,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:42:52,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:42:54,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:43:06,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:43:08,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:43:20,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:43:22,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:43:38,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:43:40,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:43:52,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:43:54,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:44:06,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:44:08,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:44:20,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:44:22,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:44:35,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:44:37,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:44:39,000 [101974058] ERROR ModemReliabilityTest.Program - Error downloading file: 
+System.Net.WebException: Unable to read data from the transport connection. ---> System.Net.Sockets.SocketException: Unknown error (0x0).
+   at System.Net.HttpWebRequest.fillBuffer(HttpWebRequest request, Connection connection, CoreResponseData data)
+   at System.Net.HttpWebRequest.getLine(HttpWebRequest request, Connection connection, CoreResponseData data)
+   at System.Net.HttpWebRequest.parseResponse(HttpWebRequest request, Connection connection, Boolean defaultKeepAlive)
+   at System.Net.HttpWebRequest.startReceiving(Connection connection)
+   at System.Net.Connection.startReceiving(Object ignored)
+   at System.Threading.ThreadPool.WorkItem.doWork(Object o)
+   at System.Threading.Timer.ring()
+
+   at System.Net.HttpWebRequest.finishGetResponse()
+   at System.Net.HttpWebRequest.GetResponse()
+   at ModemReliabilityTest.Program.Main()
+
+2012-06-11 10:44:39,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:44:41,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:44:54,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:44:56,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:45:22,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:45:24,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:45:37,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:45:39,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:45:50,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:45:52,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:46:08,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:46:10,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:46:23,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:46:25,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:46:25,000 [101974058] ERROR ModemReliabilityTest.Program - Error downloading file: 
+System.Net.WebException: Unable to read data from the transport connection. ---> System.Net.Sockets.SocketException: Unknown error (0x0).
+   at System.Net.HttpWebRequest.fillBuffer(HttpWebRequest request, Connection connection, CoreResponseData data)
+   at System.Net.HttpWebRequest.getLine(HttpWebRequest request, Connection connection, CoreResponseData data)
+   at System.Net.HttpWebRequest.parseResponse(HttpWebRequest request, Connection connection, Boolean defaultKeepAlive)
+   at System.Net.HttpWebRequest.startReceiving(Connection connection)
+   at System.Net.Connection.startReceiving(Object ignored)
+   at System.Threading.ThreadPool.WorkItem.doWork(Object o)
+   at System.Threading.Timer.ring()
+
+   at System.Net.HttpWebRequest.finishGetResponse()
+   at System.Net.HttpWebRequest.GetResponse()
+   at ModemReliabilityTest.Program.Main()
+
+2012-06-11 10:46:25,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:46:27,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:46:39,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:46:41,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:46:58,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:47:00,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:47:11,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:47:13,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:47:24,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:47:26,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:47:39,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:47:41,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:47:55,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:47:57,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:48:08,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:48:10,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:48:22,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:48:24,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:48:38,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:48:40,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:48:53,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:48:55,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:49:08,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:49:10,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:49:21,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:49:23,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:49:35,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:49:37,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:49:48,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:49:50,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:50:08,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:50:10,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:50:24,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:50:26,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:50:33,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:50:35,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:50:45,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:50:47,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:50:55,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:50:57,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:51:07,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:51:09,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:51:16,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:51:18,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:51:27,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:51:29,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:51:39,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:51:41,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:51:52,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:51:54,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:52:09,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:52:11,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:52:25,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:52:27,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:52:37,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:52:39,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:52:49,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:52:51,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:53:01,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:53:03,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
+2012-06-11 10:53:12,000 [101974058] INFO  ModemReliabilityTest.Program - Download complete
+2012-06-11 10:53:14,000 [101974058] INFO  ModemReliabilityTest.Program - Running download
