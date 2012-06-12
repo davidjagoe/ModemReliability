@@ -1,0 +1,1 @@
+Running in the same setup as test 1, but fetching a file from ftp.gnu.org (a larger file). I have seen no failures.

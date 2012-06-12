@@ -1,0 +1,3 @@
+Fetching a small file (96B) from ftp.gnu.org, code running on the G56 via cell modem.
+
+Question: will we get any failures? If not then the problem appears to be triggered by server configuration.

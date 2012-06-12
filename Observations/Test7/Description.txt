@@ -1,0 +1,3 @@
+Running via g56 and activity manager.
+
+The first 2 attempts the ethernet cable was unplugged to demonstrate 5x retries in the modem session. the last time the modem was plugged in and data was uploaded.

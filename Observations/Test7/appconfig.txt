@@ -1,0 +1,1 @@
+{"PortalURL":"http://drilling.pragmagility.com","MAC":null,"Password":"PEa0xUJDzQzDac4C","HTTPProxy":null,"HTTPProxyPort":0,"ModemType":"CELL","SATModemBootTime":5,"CELLModemBootTime":5,"reqTimeout":200000,"OptionsFetcherPeriod":24,"ActivityManagerPeriod":1,"NetworkPollPeriod":30,"NetworkActivityRetries":5,"Testing":false}

@@ -1,0 +1,761 @@
+2012-06-11 21:35:57,000 [120848542] INFO  Terminal.Program - Starting. Code Version: d078850
+2012-06-11 21:35:57,000 [120848542] DEBUG Terminal.Activities.OptionsFetcher - Last ran to completion: 6/11/2012 10:03:20 AM
+2012-06-11 21:35:57,000 [120848542] DEBUG Terminal.Activities.ContractorDataFetcher - Last ran to completion: 6/11/2012 10:03:40 AM
+2012-06-11 21:36:01,000 [120848542] DEBUG Terminal.Activities.DashboardDataUploader - Last ran to completion: 1/1/0001 12:00:00 AM
+2012-06-11 21:36:01,000 [120848542] DEBUG Terminal.Activities.DashboardDataFetcher - Last ran to completion: 6/8/2012 8:34:48 PM
+2012-06-11 21:36:01,000 [120717474] INFO  Terminal.Activities.ActivityManager - Starting activity loop
+2012-06-11 21:36:02,000 [120848542] DEBUG Terminal.GUI.Driller.JobSetupSummary - Constructing
+2012-06-11 21:36:41,000 [120848542] DEBUG Terminal.GUI.Driller.JobSetupSummary - Done with job setup page
+2012-06-11 21:36:41,000 [120848542] DEBUG Terminal.GUI.Admin.AdminDashboard - Launched
+2012-06-11 21:36:45,000 [120848542] DEBUG Terminal.GUI.Admin.AdminDashboard - F4 pressed - showing more admin options
+2012-06-11 21:37:02,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Polling network activities
+2012-06-11 21:37:02,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Polled, last ran to completion = 1/1/0001 12:00:00 AM
+2012-06-11 21:37:02,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Data exists? True
+2012-06-11 21:37:02,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it approx 7am? False
+2012-06-11 21:37:02,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is data older than 24 hours? True
+2012-06-11 21:37:02,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it the top of the hour? False
+2012-06-11 21:37:02,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Conclusion of ShouldRun: True
+2012-06-11 21:37:02,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Polled, last ran to completion = 6/11/2012 10:03:20 AM
+2012-06-11 21:37:02,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Conclusion of ShouldRun: False
+2012-06-11 21:37:02,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Polled, last ran to completion = 6/11/2012 10:03:40 AM
+2012-06-11 21:37:02,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Conclusion of ShouldRun (true if last run > 24 hours ago): False
+2012-06-11 21:42:02,000 [120717474] INFO  Terminal.Comms.Dashboard - Modem type: CELL
+2012-06-11 21:42:05,000 [120717474] INFO  Terminal.Comms.Dashboard - Modem signal @boot: UNKNOWN
+2012-06-11 21:42:05,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Polled, last ran to completion = 1/1/0001 12:00:00 AM
+2012-06-11 21:42:05,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Data exists? True
+2012-06-11 21:42:05,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it approx 7am? False
+2012-06-11 21:42:05,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is data older than 24 hours? True
+2012-06-11 21:42:05,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it the top of the hour? False
+2012-06-11 21:42:05,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Conclusion of ShouldRun: True
+2012-06-11 21:42:05,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Running activity: Terminal.Activities.DashboardDataUploader
+2012-06-11 21:42:05,000 [120717474] INFO  Terminal.Activities.DashboardDataUploader - Running
+2012-06-11 21:42:05,000 [120717474] INFO  Terminal.Comms.PortalSession - Constructing PortalSession
+2012-06-11 21:42:05,000 [120717474] DEBUG Terminal.Comms.PortalSession - Logging in
+2012-06-11 21:43:15,000 [120717474] ERROR Terminal.Activities.DashboardDataUploader - Error uploading dashboard data: 
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ConnectNoCheck(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Connection.doConnect(IPEndPoint ep)
+   at System.Net.Connection.connect(Object ignored)
+   at System.Threading.ThreadPool.WorkItem.doWork(Object o)
+   at System.Threading.Timer.ring()
+
+   at System.Net.HttpWebRequest.finishGetRequestStream()
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Terminal.Comms.PortalSession.Login()
+   at Terminal.Comms.PortalSession..ctor()
+   at Terminal.Activities.DashboardDataUploader.run()
+   at Terminal.Activities.DashboardDataUploader.Terminal.Activities.IActivity.Run()
+   at Terminal.Activities.ActivityManager.PollNetworkActivities()
+   at Terminal.Activities.ActivityManager.Start()
+
+2012-06-11 21:43:15,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Done running: Terminal.Activities.DashboardDataUploader
+2012-06-11 21:43:15,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Polled, last ran to completion = 6/11/2012 10:03:20 AM
+2012-06-11 21:43:15,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Conclusion of ShouldRun: False
+2012-06-11 21:43:15,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Polled, last ran to completion = 6/11/2012 10:03:40 AM
+2012-06-11 21:43:15,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Conclusion of ShouldRun (true if last run > 24 hours ago): False
+2012-06-11 21:43:15,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Polled, last ran to completion = 1/1/0001 12:00:00 AM
+2012-06-11 21:43:15,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Data exists? True
+2012-06-11 21:43:15,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it approx 7am? False
+2012-06-11 21:43:15,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is data older than 24 hours? True
+2012-06-11 21:43:15,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it the top of the hour? False
+2012-06-11 21:43:15,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Conclusion of ShouldRun: True
+2012-06-11 21:43:15,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Running activity: Terminal.Activities.DashboardDataUploader
+2012-06-11 21:43:15,000 [120717474] INFO  Terminal.Activities.DashboardDataUploader - Running
+2012-06-11 21:43:15,000 [120717474] INFO  Terminal.Comms.PortalSession - Constructing PortalSession
+2012-06-11 21:43:15,000 [120717474] DEBUG Terminal.Comms.PortalSession - Logging in
+2012-06-11 21:43:36,000 [120717474] ERROR Terminal.Activities.DashboardDataUploader - Error uploading dashboard data: 
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ConnectNoCheck(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Connection.doConnect(IPEndPoint ep)
+   at System.Net.Connection.connect(Object ignored)
+   at System.Threading.ThreadPool.WorkItem.doWork(Object o)
+   at System.Threading.Timer.ring()
+
+   at System.Net.HttpWebRequest.finishGetRequestStream()
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Terminal.Comms.PortalSession.Login()
+   at Terminal.Comms.PortalSession..ctor()
+   at Terminal.Activities.DashboardDataUploader.run()
+   at Terminal.Activities.DashboardDataUploader.Terminal.Activities.IActivity.Run()
+   at Terminal.Activities.ActivityManager.PollNetworkActivities()
+   at Terminal.Activities.ActivityManager.Start()
+
+2012-06-11 21:43:36,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Done running: Terminal.Activities.DashboardDataUploader
+2012-06-11 21:43:36,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Polled, last ran to completion = 6/11/2012 10:03:20 AM
+2012-06-11 21:43:36,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Conclusion of ShouldRun: False
+2012-06-11 21:43:36,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Polled, last ran to completion = 6/11/2012 10:03:40 AM
+2012-06-11 21:43:36,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Conclusion of ShouldRun (true if last run > 24 hours ago): False
+2012-06-11 21:43:36,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Polled, last ran to completion = 1/1/0001 12:00:00 AM
+2012-06-11 21:43:36,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Data exists? True
+2012-06-11 21:43:36,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it approx 7am? False
+2012-06-11 21:43:36,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is data older than 24 hours? True
+2012-06-11 21:43:36,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it the top of the hour? False
+2012-06-11 21:43:36,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Conclusion of ShouldRun: True
+2012-06-11 21:43:36,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Running activity: Terminal.Activities.DashboardDataUploader
+2012-06-11 21:43:36,000 [120717474] INFO  Terminal.Activities.DashboardDataUploader - Running
+2012-06-11 21:43:36,000 [120717474] INFO  Terminal.Comms.PortalSession - Constructing PortalSession
+2012-06-11 21:43:36,000 [120717474] DEBUG Terminal.Comms.PortalSession - Logging in
+2012-06-11 21:43:58,000 [120717474] ERROR Terminal.Activities.DashboardDataUploader - Error uploading dashboard data: 
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ConnectNoCheck(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Connection.doConnect(IPEndPoint ep)
+   at System.Net.Connection.connect(Object ignored)
+   at System.Threading.ThreadPool.WorkItem.doWork(Object o)
+   at System.Threading.Timer.ring()
+
+   at System.Net.HttpWebRequest.finishGetRequestStream()
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Terminal.Comms.PortalSession.Login()
+   at Terminal.Comms.PortalSession..ctor()
+   at Terminal.Activities.DashboardDataUploader.run()
+   at Terminal.Activities.DashboardDataUploader.Terminal.Activities.IActivity.Run()
+   at Terminal.Activities.ActivityManager.PollNetworkActivities()
+   at Terminal.Activities.ActivityManager.Start()
+
+2012-06-11 21:43:58,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Done running: Terminal.Activities.DashboardDataUploader
+2012-06-11 21:43:58,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Polled, last ran to completion = 6/11/2012 10:03:20 AM
+2012-06-11 21:43:58,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Conclusion of ShouldRun: False
+2012-06-11 21:43:58,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Polled, last ran to completion = 6/11/2012 10:03:40 AM
+2012-06-11 21:43:58,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Conclusion of ShouldRun (true if last run > 24 hours ago): False
+2012-06-11 21:43:58,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Polled, last ran to completion = 1/1/0001 12:00:00 AM
+2012-06-11 21:43:58,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Data exists? True
+2012-06-11 21:43:58,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it approx 7am? False
+2012-06-11 21:43:58,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is data older than 24 hours? True
+2012-06-11 21:43:58,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it the top of the hour? False
+2012-06-11 21:43:58,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Conclusion of ShouldRun: True
+2012-06-11 21:43:58,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Running activity: Terminal.Activities.DashboardDataUploader
+2012-06-11 21:43:58,000 [120717474] INFO  Terminal.Activities.DashboardDataUploader - Running
+2012-06-11 21:43:58,000 [120717474] INFO  Terminal.Comms.PortalSession - Constructing PortalSession
+2012-06-11 21:43:58,000 [120717474] DEBUG Terminal.Comms.PortalSession - Logging in
+2012-06-11 21:44:19,000 [120717474] ERROR Terminal.Activities.DashboardDataUploader - Error uploading dashboard data: 
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ConnectNoCheck(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Connection.doConnect(IPEndPoint ep)
+   at System.Net.Connection.connect(Object ignored)
+   at System.Threading.ThreadPool.WorkItem.doWork(Object o)
+   at System.Threading.Timer.ring()
+
+   at System.Net.HttpWebRequest.finishGetRequestStream()
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Terminal.Comms.PortalSession.Login()
+   at Terminal.Comms.PortalSession..ctor()
+   at Terminal.Activities.DashboardDataUploader.run()
+   at Terminal.Activities.DashboardDataUploader.Terminal.Activities.IActivity.Run()
+   at Terminal.Activities.ActivityManager.PollNetworkActivities()
+   at Terminal.Activities.ActivityManager.Start()
+
+2012-06-11 21:44:19,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Done running: Terminal.Activities.DashboardDataUploader
+2012-06-11 21:44:19,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Polled, last ran to completion = 6/11/2012 10:03:20 AM
+2012-06-11 21:44:19,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Conclusion of ShouldRun: False
+2012-06-11 21:44:19,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Polled, last ran to completion = 6/11/2012 10:03:40 AM
+2012-06-11 21:44:19,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Conclusion of ShouldRun (true if last run > 24 hours ago): False
+2012-06-11 21:44:19,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Polled, last ran to completion = 1/1/0001 12:00:00 AM
+2012-06-11 21:44:19,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Data exists? True
+2012-06-11 21:44:19,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it approx 7am? False
+2012-06-11 21:44:19,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is data older than 24 hours? True
+2012-06-11 21:44:19,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it the top of the hour? False
+2012-06-11 21:44:19,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Conclusion of ShouldRun: True
+2012-06-11 21:44:19,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Running activity: Terminal.Activities.DashboardDataUploader
+2012-06-11 21:44:19,000 [120717474] INFO  Terminal.Activities.DashboardDataUploader - Running
+2012-06-11 21:44:19,000 [120717474] INFO  Terminal.Comms.PortalSession - Constructing PortalSession
+2012-06-11 21:44:19,000 [120717474] DEBUG Terminal.Comms.PortalSession - Logging in
+2012-06-11 21:44:41,000 [120717474] ERROR Terminal.Activities.DashboardDataUploader - Error uploading dashboard data: 
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ConnectNoCheck(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Connection.doConnect(IPEndPoint ep)
+   at System.Net.Connection.connect(Object ignored)
+   at System.Threading.ThreadPool.WorkItem.doWork(Object o)
+   at System.Threading.Timer.ring()
+
+   at System.Net.HttpWebRequest.finishGetRequestStream()
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Terminal.Comms.PortalSession.Login()
+   at Terminal.Comms.PortalSession..ctor()
+   at Terminal.Activities.DashboardDataUploader.run()
+   at Terminal.Activities.DashboardDataUploader.Terminal.Activities.IActivity.Run()
+   at Terminal.Activities.ActivityManager.PollNetworkActivities()
+   at Terminal.Activities.ActivityManager.Start()
+
+2012-06-11 21:44:41,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Done running: Terminal.Activities.DashboardDataUploader
+2012-06-11 21:44:41,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Polled, last ran to completion = 6/11/2012 10:03:20 AM
+2012-06-11 21:44:41,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Conclusion of ShouldRun: False
+2012-06-11 21:44:41,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Polled, last ran to completion = 6/11/2012 10:03:40 AM
+2012-06-11 21:44:41,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Conclusion of ShouldRun (true if last run > 24 hours ago): False
+2012-06-11 21:44:41,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Done running all activities that wanted to run... powering down
+2012-06-11 21:44:41,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 21:44:41,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 21:44:41,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 21:44:43,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 21:44:43,000 [120717474] DEBUG Terminal.Data.DashboardData - Done reading job parameters
+2012-06-11 21:44:43,000 [120717474] DEBUG Terminal.Data.DashboardData - Job setup is complete
+2012-06-11 21:44:44,000 [120717474] DEBUG Terminal.Data.DashboardData - Done building prefix
+2012-06-11 21:45:44,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 21:45:44,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 21:45:44,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 21:45:44,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 21:45:44,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 21:46:44,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 21:46:44,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 21:46:44,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 21:46:44,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 21:46:44,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 21:47:44,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 21:47:44,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 21:47:44,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 21:47:44,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 21:47:44,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 21:48:45,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 21:48:45,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 21:48:45,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 21:48:45,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 21:48:45,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 21:49:45,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 21:49:45,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 21:49:45,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 21:49:45,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 21:49:45,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 21:50:45,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 21:50:45,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 21:50:45,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 21:50:45,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 21:50:45,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 21:51:45,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 21:51:45,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 21:51:45,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 21:51:45,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 21:51:45,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 21:52:45,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 21:52:45,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 21:52:45,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 21:52:45,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 21:52:45,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 21:53:45,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 21:53:46,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 21:53:46,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 21:53:46,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 21:53:46,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 21:54:46,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 21:54:46,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 21:54:46,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 21:54:46,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 21:54:46,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 21:55:33,000 [120848542] DEBUG Terminal.GUI.Admin.AdminDashboard - F4 pressed - showing more admin options
+2012-06-11 21:55:46,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 21:55:46,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 21:55:46,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 21:55:46,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 21:55:46,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 21:56:46,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 21:56:46,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 21:56:46,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 21:56:46,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 21:56:46,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 21:57:46,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 21:57:46,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 21:57:46,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 21:57:46,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 21:57:46,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 21:58:46,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 21:58:46,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 21:58:46,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 21:58:47,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 21:58:47,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 21:59:47,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 21:59:47,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 21:59:47,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 21:59:47,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 21:59:47,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:00:47,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:00:47,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:00:47,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:00:47,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:00:47,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:01:47,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:01:47,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:01:47,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:01:47,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:01:47,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:02:47,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:02:47,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:02:47,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:02:48,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:02:48,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:03:48,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:03:48,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:03:48,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:03:48,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:03:48,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:04:48,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:04:48,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:04:48,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:04:48,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:04:48,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:05:48,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:05:48,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:05:48,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:05:48,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:05:48,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:06:48,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:06:48,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:06:48,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:06:48,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:06:48,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:07:48,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:07:48,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:07:48,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:07:48,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:07:48,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:08:49,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:08:49,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:08:49,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:08:49,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:08:49,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:09:17,000 [120848542] DEBUG Terminal.GUI.Admin.AdminDashboard - F4 pressed - showing more admin options
+2012-06-11 22:09:49,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:09:49,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:09:49,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:09:49,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:09:49,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:10:49,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:10:49,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:10:49,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:10:49,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:10:49,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:11:49,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:11:49,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:11:49,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:11:49,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:11:49,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:12:49,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:12:49,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:12:49,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:12:50,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:12:50,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:13:50,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:13:50,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:13:50,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:13:50,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:13:50,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:14:50,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Polling network activities
+2012-06-11 22:14:50,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Polled, last ran to completion = 1/1/0001 12:00:00 AM
+2012-06-11 22:14:50,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Data exists? True
+2012-06-11 22:14:50,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it approx 7am? False
+2012-06-11 22:14:50,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is data older than 24 hours? True
+2012-06-11 22:14:50,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it the top of the hour? False
+2012-06-11 22:14:50,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Conclusion of ShouldRun: True
+2012-06-11 22:14:50,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Polled, last ran to completion = 6/11/2012 10:03:20 AM
+2012-06-11 22:14:50,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Conclusion of ShouldRun: False
+2012-06-11 22:14:50,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Polled, last ran to completion = 6/11/2012 10:03:40 AM
+2012-06-11 22:14:50,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Conclusion of ShouldRun (true if last run > 24 hours ago): False
+2012-06-11 22:19:29,000 [120848542] DEBUG Terminal.GUI.Admin.AdminDashboard - F4 pressed - showing more admin options
+2012-06-11 22:19:50,000 [120717474] INFO  Terminal.Comms.Dashboard - Modem type: CELL
+2012-06-11 22:19:50,000 [120717474] INFO  Terminal.Comms.Dashboard - Modem signal @boot: UNKNOWN
+2012-06-11 22:19:50,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Polled, last ran to completion = 1/1/0001 12:00:00 AM
+2012-06-11 22:19:50,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Data exists? True
+2012-06-11 22:19:50,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it approx 7am? False
+2012-06-11 22:19:50,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is data older than 24 hours? True
+2012-06-11 22:19:50,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it the top of the hour? False
+2012-06-11 22:19:50,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Conclusion of ShouldRun: True
+2012-06-11 22:19:50,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Running activity: Terminal.Activities.DashboardDataUploader
+2012-06-11 22:19:50,000 [120717474] INFO  Terminal.Activities.DashboardDataUploader - Running
+2012-06-11 22:19:50,000 [120717474] INFO  Terminal.Comms.PortalSession - Constructing PortalSession
+2012-06-11 22:19:51,000 [120717474] DEBUG Terminal.Comms.PortalSession - Logging in
+2012-06-11 22:21:00,000 [120717474] ERROR Terminal.Activities.DashboardDataUploader - Error uploading dashboard data: 
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ConnectNoCheck(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Connection.doConnect(IPEndPoint ep)
+   at System.Net.Connection.connect(Object ignored)
+   at System.Threading.ThreadPool.WorkItem.doWork(Object o)
+   at System.Threading.Timer.ring()
+
+   at System.Net.HttpWebRequest.finishGetRequestStream()
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Terminal.Comms.PortalSession.Login()
+   at Terminal.Comms.PortalSession..ctor()
+   at Terminal.Activities.DashboardDataUploader.run()
+   at Terminal.Activities.DashboardDataUploader.Terminal.Activities.IActivity.Run()
+   at Terminal.Activities.ActivityManager.PollNetworkActivities()
+   at Terminal.Activities.ActivityManager.Start()
+
+2012-06-11 22:21:01,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Done running: Terminal.Activities.DashboardDataUploader
+2012-06-11 22:21:01,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Polled, last ran to completion = 6/11/2012 10:03:20 AM
+2012-06-11 22:21:01,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Conclusion of ShouldRun: False
+2012-06-11 22:21:01,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Polled, last ran to completion = 6/11/2012 10:03:40 AM
+2012-06-11 22:21:01,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Conclusion of ShouldRun (true if last run > 24 hours ago): False
+2012-06-11 22:21:01,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Polled, last ran to completion = 1/1/0001 12:00:00 AM
+2012-06-11 22:21:01,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Data exists? True
+2012-06-11 22:21:01,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it approx 7am? False
+2012-06-11 22:21:01,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is data older than 24 hours? True
+2012-06-11 22:21:01,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it the top of the hour? False
+2012-06-11 22:21:01,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Conclusion of ShouldRun: True
+2012-06-11 22:21:01,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Running activity: Terminal.Activities.DashboardDataUploader
+2012-06-11 22:21:01,000 [120717474] INFO  Terminal.Activities.DashboardDataUploader - Running
+2012-06-11 22:21:01,000 [120717474] INFO  Terminal.Comms.PortalSession - Constructing PortalSession
+2012-06-11 22:21:01,000 [120717474] DEBUG Terminal.Comms.PortalSession - Logging in
+2012-06-11 22:21:22,000 [120717474] ERROR Terminal.Activities.DashboardDataUploader - Error uploading dashboard data: 
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ConnectNoCheck(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Connection.doConnect(IPEndPoint ep)
+   at System.Net.Connection.connect(Object ignored)
+   at System.Threading.ThreadPool.WorkItem.doWork(Object o)
+   at System.Threading.Timer.ring()
+
+   at System.Net.HttpWebRequest.finishGetRequestStream()
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Terminal.Comms.PortalSession.Login()
+   at Terminal.Comms.PortalSession..ctor()
+   at Terminal.Activities.DashboardDataUploader.run()
+   at Terminal.Activities.DashboardDataUploader.Terminal.Activities.IActivity.Run()
+   at Terminal.Activities.ActivityManager.PollNetworkActivities()
+   at Terminal.Activities.ActivityManager.Start()
+
+2012-06-11 22:21:22,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Done running: Terminal.Activities.DashboardDataUploader
+2012-06-11 22:21:22,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Polled, last ran to completion = 6/11/2012 10:03:20 AM
+2012-06-11 22:21:22,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Conclusion of ShouldRun: False
+2012-06-11 22:21:22,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Polled, last ran to completion = 6/11/2012 10:03:40 AM
+2012-06-11 22:21:22,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Conclusion of ShouldRun (true if last run > 24 hours ago): False
+2012-06-11 22:21:22,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Polled, last ran to completion = 1/1/0001 12:00:00 AM
+2012-06-11 22:21:22,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Data exists? True
+2012-06-11 22:21:22,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it approx 7am? False
+2012-06-11 22:21:22,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is data older than 24 hours? True
+2012-06-11 22:21:22,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it the top of the hour? False
+2012-06-11 22:21:22,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Conclusion of ShouldRun: True
+2012-06-11 22:21:22,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Running activity: Terminal.Activities.DashboardDataUploader
+2012-06-11 22:21:22,000 [120717474] INFO  Terminal.Activities.DashboardDataUploader - Running
+2012-06-11 22:21:22,000 [120717474] INFO  Terminal.Comms.PortalSession - Constructing PortalSession
+2012-06-11 22:21:22,000 [120717474] DEBUG Terminal.Comms.PortalSession - Logging in
+2012-06-11 22:21:43,000 [120717474] ERROR Terminal.Activities.DashboardDataUploader - Error uploading dashboard data: 
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ConnectNoCheck(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Connection.doConnect(IPEndPoint ep)
+   at System.Net.Connection.connect(Object ignored)
+   at System.Threading.ThreadPool.WorkItem.doWork(Object o)
+   at System.Threading.Timer.ring()
+
+   at System.Net.HttpWebRequest.finishGetRequestStream()
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Terminal.Comms.PortalSession.Login()
+   at Terminal.Comms.PortalSession..ctor()
+   at Terminal.Activities.DashboardDataUploader.run()
+   at Terminal.Activities.DashboardDataUploader.Terminal.Activities.IActivity.Run()
+   at Terminal.Activities.ActivityManager.PollNetworkActivities()
+   at Terminal.Activities.ActivityManager.Start()
+
+2012-06-11 22:21:43,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Done running: Terminal.Activities.DashboardDataUploader
+2012-06-11 22:21:43,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Polled, last ran to completion = 6/11/2012 10:03:20 AM
+2012-06-11 22:21:43,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Conclusion of ShouldRun: False
+2012-06-11 22:21:43,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Polled, last ran to completion = 6/11/2012 10:03:40 AM
+2012-06-11 22:21:43,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Conclusion of ShouldRun (true if last run > 24 hours ago): False
+2012-06-11 22:21:43,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Polled, last ran to completion = 1/1/0001 12:00:00 AM
+2012-06-11 22:21:43,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Data exists? True
+2012-06-11 22:21:43,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it approx 7am? False
+2012-06-11 22:21:43,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is data older than 24 hours? True
+2012-06-11 22:21:43,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it the top of the hour? False
+2012-06-11 22:21:43,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Conclusion of ShouldRun: True
+2012-06-11 22:21:43,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Running activity: Terminal.Activities.DashboardDataUploader
+2012-06-11 22:21:43,000 [120717474] INFO  Terminal.Activities.DashboardDataUploader - Running
+2012-06-11 22:21:43,000 [120717474] INFO  Terminal.Comms.PortalSession - Constructing PortalSession
+2012-06-11 22:21:43,000 [120717474] DEBUG Terminal.Comms.PortalSession - Logging in
+2012-06-11 22:21:49,000 [120848542] DEBUG Terminal.GUI.Admin.AdminDashboard - F4 pressed - showing more admin options
+2012-06-11 22:22:04,000 [120717474] ERROR Terminal.Activities.DashboardDataUploader - Error uploading dashboard data: 
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ConnectNoCheck(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Connection.doConnect(IPEndPoint ep)
+   at System.Net.Connection.connect(Object ignored)
+   at System.Threading.ThreadPool.WorkItem.doWork(Object o)
+   at System.Threading.Timer.ring()
+
+   at System.Net.HttpWebRequest.finishGetRequestStream()
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Terminal.Comms.PortalSession.Login()
+   at Terminal.Comms.PortalSession..ctor()
+   at Terminal.Activities.DashboardDataUploader.run()
+   at Terminal.Activities.DashboardDataUploader.Terminal.Activities.IActivity.Run()
+   at Terminal.Activities.ActivityManager.PollNetworkActivities()
+   at Terminal.Activities.ActivityManager.Start()
+
+2012-06-11 22:22:05,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Done running: Terminal.Activities.DashboardDataUploader
+2012-06-11 22:22:05,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Polled, last ran to completion = 6/11/2012 10:03:20 AM
+2012-06-11 22:22:05,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Conclusion of ShouldRun: False
+2012-06-11 22:22:05,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Polled, last ran to completion = 6/11/2012 10:03:40 AM
+2012-06-11 22:22:05,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Conclusion of ShouldRun (true if last run > 24 hours ago): False
+2012-06-11 22:22:05,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Polled, last ran to completion = 1/1/0001 12:00:00 AM
+2012-06-11 22:22:05,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Data exists? True
+2012-06-11 22:22:05,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it approx 7am? False
+2012-06-11 22:22:05,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is data older than 24 hours? True
+2012-06-11 22:22:05,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it the top of the hour? False
+2012-06-11 22:22:05,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Conclusion of ShouldRun: True
+2012-06-11 22:22:05,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Running activity: Terminal.Activities.DashboardDataUploader
+2012-06-11 22:22:05,000 [120717474] INFO  Terminal.Activities.DashboardDataUploader - Running
+2012-06-11 22:22:05,000 [120717474] INFO  Terminal.Comms.PortalSession - Constructing PortalSession
+2012-06-11 22:22:05,000 [120717474] DEBUG Terminal.Comms.PortalSession - Logging in
+2012-06-11 22:22:26,000 [120717474] ERROR Terminal.Activities.DashboardDataUploader - Error uploading dashboard data: 
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ConnectNoCheck(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Connection.doConnect(IPEndPoint ep)
+   at System.Net.Connection.connect(Object ignored)
+   at System.Threading.ThreadPool.WorkItem.doWork(Object o)
+   at System.Threading.Timer.ring()
+
+   at System.Net.HttpWebRequest.finishGetRequestStream()
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Terminal.Comms.PortalSession.Login()
+   at Terminal.Comms.PortalSession..ctor()
+   at Terminal.Activities.DashboardDataUploader.run()
+   at Terminal.Activities.DashboardDataUploader.Terminal.Activities.IActivity.Run()
+   at Terminal.Activities.ActivityManager.PollNetworkActivities()
+   at Terminal.Activities.ActivityManager.Start()
+
+2012-06-11 22:22:26,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Done running: Terminal.Activities.DashboardDataUploader
+2012-06-11 22:22:26,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Polled, last ran to completion = 6/11/2012 10:03:20 AM
+2012-06-11 22:22:26,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Conclusion of ShouldRun: False
+2012-06-11 22:22:26,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Polled, last ran to completion = 6/11/2012 10:03:40 AM
+2012-06-11 22:22:26,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Conclusion of ShouldRun (true if last run > 24 hours ago): False
+2012-06-11 22:22:26,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Done running all activities that wanted to run... powering down
+2012-06-11 22:22:26,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:22:26,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:22:26,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:22:26,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:22:26,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:22:29,000 [120848542] DEBUG Terminal.GUI.Admin.AdminDashboard - F4 pressed - showing more admin options
+2012-06-11 22:23:26,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:23:26,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:23:26,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:23:26,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:23:26,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:23:39,000 [120848542] DEBUG Terminal.GUI.Admin.AdminDashboard - F4 pressed - showing more admin options
+2012-06-11 22:24:26,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:24:26,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:24:26,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:24:26,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:24:26,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:25:26,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:25:26,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:25:26,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:25:27,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:25:27,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:26:27,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:26:27,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:26:27,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:26:27,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:26:27,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:27:27,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:27:27,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:27:27,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:27:27,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:27:27,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:28:27,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:28:27,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:28:27,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:28:27,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:28:27,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:29:27,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:29:27,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:29:27,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:29:27,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:29:27,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:30:27,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:30:28,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:30:28,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:30:28,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:30:28,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:31:28,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:31:28,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:31:28,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:31:28,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:31:28,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:32:28,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:32:28,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:32:28,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:32:28,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:32:28,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:33:28,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:33:28,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:33:28,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:33:28,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:33:28,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:34:28,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:34:28,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:34:28,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:34:28,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:34:28,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:35:28,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:35:28,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:35:28,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:35:29,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:35:29,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:36:29,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:36:29,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:36:29,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:36:29,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:36:29,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:37:29,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:37:29,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:37:29,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:37:29,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:37:29,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:38:29,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:38:29,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:38:29,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:38:29,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:38:29,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:39:29,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:39:29,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:39:29,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:39:29,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:39:29,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:40:29,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:40:29,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:40:29,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:40:30,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:40:30,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:41:30,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:41:30,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:41:30,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:41:30,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:41:30,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:42:30,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:42:30,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:42:30,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:42:30,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:42:30,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:43:30,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:43:30,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:43:30,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:43:30,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:43:30,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:44:30,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:44:30,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:44:30,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:44:30,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:44:30,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:45:30,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:45:30,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:45:30,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:45:30,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:45:30,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:46:31,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:46:31,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:46:31,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:46:31,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:46:31,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:47:31,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:47:31,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:47:31,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:47:31,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:47:31,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:48:31,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:48:31,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:48:31,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:48:31,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:48:31,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:49:31,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:49:31,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:49:31,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:49:31,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:49:31,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:50:31,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:50:31,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:50:31,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:50:31,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:50:31,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:51:32,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 6/8/2012 8:34:48 PM
+2012-06-11 22:51:32,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:51:32,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:51:32,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:51:32,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:52:32,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Polling network activities
+2012-06-11 22:52:32,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Polled, last ran to completion = 1/1/0001 12:00:00 AM
+2012-06-11 22:52:32,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Data exists? True
+2012-06-11 22:52:32,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it approx 7am? False
+2012-06-11 22:52:32,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is data older than 24 hours? True
+2012-06-11 22:52:32,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it the top of the hour? False
+2012-06-11 22:52:32,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Conclusion of ShouldRun: True
+2012-06-11 22:52:32,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Polled, last ran to completion = 6/11/2012 10:03:20 AM
+2012-06-11 22:52:32,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Conclusion of ShouldRun: False
+2012-06-11 22:52:32,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Polled, last ran to completion = 6/11/2012 10:03:40 AM
+2012-06-11 22:52:32,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Conclusion of ShouldRun (true if last run > 24 hours ago): False
+2012-06-11 22:53:28,000 [120848542] DEBUG Terminal.GUI.Admin.AdminDashboard - F4 pressed - showing more admin options
+2012-06-11 22:57:32,000 [120717474] INFO  Terminal.Comms.Dashboard - Modem type: CELL
+2012-06-11 22:57:34,000 [120717474] INFO  Terminal.Comms.Dashboard - Modem signal @boot: 19
+2012-06-11 22:57:35,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Polled, last ran to completion = 1/1/0001 12:00:00 AM
+2012-06-11 22:57:35,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Data exists? True
+2012-06-11 22:57:35,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it approx 7am? False
+2012-06-11 22:57:35,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is data older than 24 hours? True
+2012-06-11 22:57:35,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it the top of the hour? False
+2012-06-11 22:57:35,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Conclusion of ShouldRun: True
+2012-06-11 22:57:35,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Running activity: Terminal.Activities.DashboardDataUploader
+2012-06-11 22:57:35,000 [120717474] INFO  Terminal.Activities.DashboardDataUploader - Running
+2012-06-11 22:57:35,000 [120717474] INFO  Terminal.Comms.PortalSession - Constructing PortalSession
+2012-06-11 22:57:35,000 [120717474] DEBUG Terminal.Comms.PortalSession - Logging in
+2012-06-11 22:57:39,000 [120717474] DEBUG Terminal.Comms.PortalSession - Wrote to request stream
+2012-06-11 22:57:39,000 [120717474] DEBUG Terminal.Comms.PortalSession - Getting response
+2012-06-11 22:57:40,000 [120717474] DEBUG Terminal.Comms.PortalSession - Got response, status: Found
+2012-06-11 22:57:40,000 [120717474] DEBUG Terminal.Comms.PortalSession - POSTing N files: 1
+2012-06-11 22:57:40,000 [120717474] DEBUG Terminal.Comms.PortalSession - Adding authentication: authtkt="bc422227a6ad82371089ef698849cc1a4fd6da6800%3A03%3AB6%3A01%3A85%3A20!"
+2012-06-11 22:57:40,000 [120717474] DEBUG Terminal.Comms.PortalSession - Set up authenticated request
+2012-06-11 22:57:40,000 [120717474] DEBUG Terminal.Comms.PortalSession - Generated post data
+2012-06-11 22:57:40,000 [120717474] DEBUG Terminal.Comms.PortalSession - Wrote to request stream
+2012-06-11 22:57:41,000 [120717474] DEBUG Terminal.Comms.PortalSession - Adding authentication: authtkt="bc422227a6ad82371089ef698849cc1a4fd6da6800%3A03%3AB6%3A01%3A85%3A20!"
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Done running: Terminal.Activities.DashboardDataUploader
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Polled, last ran to completion = 6/11/2012 10:03:20 AM
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Conclusion of ShouldRun: False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Polled, last ran to completion = 6/11/2012 10:03:40 AM
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Conclusion of ShouldRun (true if last run > 24 hours ago): False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Polled, last ran to completion = 6/11/2012 10:57:42 PM
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Data exists? False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it approx 7am? False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is data older than 24 hours? False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it the top of the hour? False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Conclusion of ShouldRun: False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Polled, last ran to completion = 6/11/2012 10:03:20 AM
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Conclusion of ShouldRun: False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Polled, last ran to completion = 6/11/2012 10:03:40 AM
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Conclusion of ShouldRun (true if last run > 24 hours ago): False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Polled, last ran to completion = 6/11/2012 10:57:42 PM
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Data exists? False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it approx 7am? False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is data older than 24 hours? False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it the top of the hour? False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Conclusion of ShouldRun: False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Polled, last ran to completion = 6/11/2012 10:03:20 AM
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Conclusion of ShouldRun: False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Polled, last ran to completion = 6/11/2012 10:03:40 AM
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Conclusion of ShouldRun (true if last run > 24 hours ago): False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Polled, last ran to completion = 6/11/2012 10:57:42 PM
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Data exists? False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it approx 7am? False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is data older than 24 hours? False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it the top of the hour? False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Conclusion of ShouldRun: False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Polled, last ran to completion = 6/11/2012 10:03:20 AM
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Conclusion of ShouldRun: False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Polled, last ran to completion = 6/11/2012 10:03:40 AM
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Conclusion of ShouldRun (true if last run > 24 hours ago): False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Polled, last ran to completion = 6/11/2012 10:57:42 PM
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Data exists? False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it approx 7am? False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is data older than 24 hours? False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Is it the top of the hour? False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataUploader - Conclusion of ShouldRun: False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Polled, last ran to completion = 6/11/2012 10:03:20 AM
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.OptionsFetcher - Conclusion of ShouldRun: False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Polled, last ran to completion = 6/11/2012 10:03:40 AM
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.ContractorDataFetcher - Conclusion of ShouldRun (true if last run > 24 hours ago): False
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.ActivityManager - Done running all activities that wanted to run... powering down
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Polled, last ran to completion = 1/1/0001 12:00:00 AM
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Conclusion of ShouldRun: True
+2012-06-11 22:57:42,000 [120717474] DEBUG Terminal.Activities.DashboardDataFetcher - Running
+2012-06-11 22:57:43,000 [120717474] DEBUG Terminal.Data.DashboardData - Writing dashboard lines
+2012-06-11 22:57:44,000 [120717474] DEBUG Terminal.Data.DashboardData - No lines to write
+2012-06-11 22:58:07,000 [120848542] DEBUG Terminal.GUI.Admin.AdminDashboard - F4 pressed - showing more admin options

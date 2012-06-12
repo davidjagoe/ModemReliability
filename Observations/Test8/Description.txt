@@ -1,0 +1,1 @@
+Running all night fetching the file from ftp.gnu.org. This test did not produce any negative results in a short run earlier.

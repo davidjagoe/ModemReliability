@@ -1,0 +1,210 @@
+2012-06-11 21:35:57,000 [120848542] INFO  Terminal.Program - Starting. Code Version: d078850
+2012-06-11 21:36:01,000 [120717474] INFO  Terminal.Activities.ActivityManager - Starting activity loop
+2012-06-11 21:42:02,000 [120717474] INFO  Terminal.Comms.Dashboard - Modem type: CELL
+2012-06-11 21:42:05,000 [120717474] INFO  Terminal.Comms.Dashboard - Modem signal @boot: UNKNOWN
+2012-06-11 21:42:05,000 [120717474] INFO  Terminal.Activities.DashboardDataUploader - Running
+2012-06-11 21:42:05,000 [120717474] INFO  Terminal.Comms.PortalSession - Constructing PortalSession
+2012-06-11 21:43:15,000 [120717474] ERROR Terminal.Activities.DashboardDataUploader - Error uploading dashboard data: 
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ConnectNoCheck(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Connection.doConnect(IPEndPoint ep)
+   at System.Net.Connection.connect(Object ignored)
+   at System.Threading.ThreadPool.WorkItem.doWork(Object o)
+   at System.Threading.Timer.ring()
+
+   at System.Net.HttpWebRequest.finishGetRequestStream()
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Terminal.Comms.PortalSession.Login()
+   at Terminal.Comms.PortalSession..ctor()
+   at Terminal.Activities.DashboardDataUploader.run()
+   at Terminal.Activities.DashboardDataUploader.Terminal.Activities.IActivity.Run()
+   at Terminal.Activities.ActivityManager.PollNetworkActivities()
+   at Terminal.Activities.ActivityManager.Start()
+
+2012-06-11 21:43:15,000 [120717474] INFO  Terminal.Activities.DashboardDataUploader - Running
+2012-06-11 21:43:15,000 [120717474] INFO  Terminal.Comms.PortalSession - Constructing PortalSession
+2012-06-11 21:43:36,000 [120717474] ERROR Terminal.Activities.DashboardDataUploader - Error uploading dashboard data: 
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ConnectNoCheck(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Connection.doConnect(IPEndPoint ep)
+   at System.Net.Connection.connect(Object ignored)
+   at System.Threading.ThreadPool.WorkItem.doWork(Object o)
+   at System.Threading.Timer.ring()
+
+   at System.Net.HttpWebRequest.finishGetRequestStream()
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Terminal.Comms.PortalSession.Login()
+   at Terminal.Comms.PortalSession..ctor()
+   at Terminal.Activities.DashboardDataUploader.run()
+   at Terminal.Activities.DashboardDataUploader.Terminal.Activities.IActivity.Run()
+   at Terminal.Activities.ActivityManager.PollNetworkActivities()
+   at Terminal.Activities.ActivityManager.Start()
+
+2012-06-11 21:43:36,000 [120717474] INFO  Terminal.Activities.DashboardDataUploader - Running
+2012-06-11 21:43:36,000 [120717474] INFO  Terminal.Comms.PortalSession - Constructing PortalSession
+2012-06-11 21:43:58,000 [120717474] ERROR Terminal.Activities.DashboardDataUploader - Error uploading dashboard data: 
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ConnectNoCheck(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Connection.doConnect(IPEndPoint ep)
+   at System.Net.Connection.connect(Object ignored)
+   at System.Threading.ThreadPool.WorkItem.doWork(Object o)
+   at System.Threading.Timer.ring()
+
+   at System.Net.HttpWebRequest.finishGetRequestStream()
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Terminal.Comms.PortalSession.Login()
+   at Terminal.Comms.PortalSession..ctor()
+   at Terminal.Activities.DashboardDataUploader.run()
+   at Terminal.Activities.DashboardDataUploader.Terminal.Activities.IActivity.Run()
+   at Terminal.Activities.ActivityManager.PollNetworkActivities()
+   at Terminal.Activities.ActivityManager.Start()
+
+2012-06-11 21:43:58,000 [120717474] INFO  Terminal.Activities.DashboardDataUploader - Running
+2012-06-11 21:43:58,000 [120717474] INFO  Terminal.Comms.PortalSession - Constructing PortalSession
+2012-06-11 21:44:19,000 [120717474] ERROR Terminal.Activities.DashboardDataUploader - Error uploading dashboard data: 
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ConnectNoCheck(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Connection.doConnect(IPEndPoint ep)
+   at System.Net.Connection.connect(Object ignored)
+   at System.Threading.ThreadPool.WorkItem.doWork(Object o)
+   at System.Threading.Timer.ring()
+
+   at System.Net.HttpWebRequest.finishGetRequestStream()
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Terminal.Comms.PortalSession.Login()
+   at Terminal.Comms.PortalSession..ctor()
+   at Terminal.Activities.DashboardDataUploader.run()
+   at Terminal.Activities.DashboardDataUploader.Terminal.Activities.IActivity.Run()
+   at Terminal.Activities.ActivityManager.PollNetworkActivities()
+   at Terminal.Activities.ActivityManager.Start()
+
+2012-06-11 21:44:19,000 [120717474] INFO  Terminal.Activities.DashboardDataUploader - Running
+2012-06-11 21:44:19,000 [120717474] INFO  Terminal.Comms.PortalSession - Constructing PortalSession
+2012-06-11 21:44:41,000 [120717474] ERROR Terminal.Activities.DashboardDataUploader - Error uploading dashboard data: 
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ConnectNoCheck(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Connection.doConnect(IPEndPoint ep)
+   at System.Net.Connection.connect(Object ignored)
+   at System.Threading.ThreadPool.WorkItem.doWork(Object o)
+   at System.Threading.Timer.ring()
+
+   at System.Net.HttpWebRequest.finishGetRequestStream()
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Terminal.Comms.PortalSession.Login()
+   at Terminal.Comms.PortalSession..ctor()
+   at Terminal.Activities.DashboardDataUploader.run()
+   at Terminal.Activities.DashboardDataUploader.Terminal.Activities.IActivity.Run()
+   at Terminal.Activities.ActivityManager.PollNetworkActivities()
+   at Terminal.Activities.ActivityManager.Start()
+
+2012-06-11 22:19:50,000 [120717474] INFO  Terminal.Comms.Dashboard - Modem type: CELL
+2012-06-11 22:19:50,000 [120717474] INFO  Terminal.Comms.Dashboard - Modem signal @boot: UNKNOWN
+2012-06-11 22:19:50,000 [120717474] INFO  Terminal.Activities.DashboardDataUploader - Running
+2012-06-11 22:19:50,000 [120717474] INFO  Terminal.Comms.PortalSession - Constructing PortalSession
+2012-06-11 22:21:00,000 [120717474] ERROR Terminal.Activities.DashboardDataUploader - Error uploading dashboard data: 
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ConnectNoCheck(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Connection.doConnect(IPEndPoint ep)
+   at System.Net.Connection.connect(Object ignored)
+   at System.Threading.ThreadPool.WorkItem.doWork(Object o)
+   at System.Threading.Timer.ring()
+
+   at System.Net.HttpWebRequest.finishGetRequestStream()
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Terminal.Comms.PortalSession.Login()
+   at Terminal.Comms.PortalSession..ctor()
+   at Terminal.Activities.DashboardDataUploader.run()
+   at Terminal.Activities.DashboardDataUploader.Terminal.Activities.IActivity.Run()
+   at Terminal.Activities.ActivityManager.PollNetworkActivities()
+   at Terminal.Activities.ActivityManager.Start()
+
+2012-06-11 22:21:01,000 [120717474] INFO  Terminal.Activities.DashboardDataUploader - Running
+2012-06-11 22:21:01,000 [120717474] INFO  Terminal.Comms.PortalSession - Constructing PortalSession
+2012-06-11 22:21:22,000 [120717474] ERROR Terminal.Activities.DashboardDataUploader - Error uploading dashboard data: 
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ConnectNoCheck(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Connection.doConnect(IPEndPoint ep)
+   at System.Net.Connection.connect(Object ignored)
+   at System.Threading.ThreadPool.WorkItem.doWork(Object o)
+   at System.Threading.Timer.ring()
+
+   at System.Net.HttpWebRequest.finishGetRequestStream()
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Terminal.Comms.PortalSession.Login()
+   at Terminal.Comms.PortalSession..ctor()
+   at Terminal.Activities.DashboardDataUploader.run()
+   at Terminal.Activities.DashboardDataUploader.Terminal.Activities.IActivity.Run()
+   at Terminal.Activities.ActivityManager.PollNetworkActivities()
+   at Terminal.Activities.ActivityManager.Start()
+
+2012-06-11 22:21:22,000 [120717474] INFO  Terminal.Activities.DashboardDataUploader - Running
+2012-06-11 22:21:22,000 [120717474] INFO  Terminal.Comms.PortalSession - Constructing PortalSession
+2012-06-11 22:21:43,000 [120717474] ERROR Terminal.Activities.DashboardDataUploader - Error uploading dashboard data: 
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ConnectNoCheck(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Connection.doConnect(IPEndPoint ep)
+   at System.Net.Connection.connect(Object ignored)
+   at System.Threading.ThreadPool.WorkItem.doWork(Object o)
+   at System.Threading.Timer.ring()
+
+   at System.Net.HttpWebRequest.finishGetRequestStream()
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Terminal.Comms.PortalSession.Login()
+   at Terminal.Comms.PortalSession..ctor()
+   at Terminal.Activities.DashboardDataUploader.run()
+   at Terminal.Activities.DashboardDataUploader.Terminal.Activities.IActivity.Run()
+   at Terminal.Activities.ActivityManager.PollNetworkActivities()
+   at Terminal.Activities.ActivityManager.Start()
+
+2012-06-11 22:21:43,000 [120717474] INFO  Terminal.Activities.DashboardDataUploader - Running
+2012-06-11 22:21:43,000 [120717474] INFO  Terminal.Comms.PortalSession - Constructing PortalSession
+2012-06-11 22:22:04,000 [120717474] ERROR Terminal.Activities.DashboardDataUploader - Error uploading dashboard data: 
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ConnectNoCheck(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Connection.doConnect(IPEndPoint ep)
+   at System.Net.Connection.connect(Object ignored)
+   at System.Threading.ThreadPool.WorkItem.doWork(Object o)
+   at System.Threading.Timer.ring()
+
+   at System.Net.HttpWebRequest.finishGetRequestStream()
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Terminal.Comms.PortalSession.Login()
+   at Terminal.Comms.PortalSession..ctor()
+   at Terminal.Activities.DashboardDataUploader.run()
+   at Terminal.Activities.DashboardDataUploader.Terminal.Activities.IActivity.Run()
+   at Terminal.Activities.ActivityManager.PollNetworkActivities()
+   at Terminal.Activities.ActivityManager.Start()
+
+2012-06-11 22:22:05,000 [120717474] INFO  Terminal.Activities.DashboardDataUploader - Running
+2012-06-11 22:22:05,000 [120717474] INFO  Terminal.Comms.PortalSession - Constructing PortalSession
+2012-06-11 22:22:26,000 [120717474] ERROR Terminal.Activities.DashboardDataUploader - Error uploading dashboard data: 
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ConnectNoCheck(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Connection.doConnect(IPEndPoint ep)
+   at System.Net.Connection.connect(Object ignored)
+   at System.Threading.ThreadPool.WorkItem.doWork(Object o)
+   at System.Threading.Timer.ring()
+
+   at System.Net.HttpWebRequest.finishGetRequestStream()
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Terminal.Comms.PortalSession.Login()
+   at Terminal.Comms.PortalSession..ctor()
+   at Terminal.Activities.DashboardDataUploader.run()
+   at Terminal.Activities.DashboardDataUploader.Terminal.Activities.IActivity.Run()
+   at Terminal.Activities.ActivityManager.PollNetworkActivities()
+   at Terminal.Activities.ActivityManager.Start()
+
+2012-06-11 22:57:32,000 [120717474] INFO  Terminal.Comms.Dashboard - Modem type: CELL
+2012-06-11 22:57:34,000 [120717474] INFO  Terminal.Comms.Dashboard - Modem signal @boot: 19
+2012-06-11 22:57:35,000 [120717474] INFO  Terminal.Activities.DashboardDataUploader - Running
+2012-06-11 22:57:35,000 [120717474] INFO  Terminal.Comms.PortalSession - Constructing PortalSession
