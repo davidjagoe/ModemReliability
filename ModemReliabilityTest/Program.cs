@@ -21,14 +21,17 @@ namespace ModemReliabilityTest
             log.Info("Starting");
             HttpWebRequest r;
 
+            //string url = "http://ftp.gnu.org/gnu/emacs/windows/libxpm-3.5.8-w32-src.zip"; // 1.4 MB
+            string url = "http://drillersdashboard.com/images/productivity-circle.png"; // 125 kB
+            //string url = "http://174.143.211.239/images/productivity-circle.png"; // 125 kB
+            //string url = "http://198.101.228.191/image.png"; // same as dd pic, served from nginx
+            //string url = "http://ftp.gnu.org/gnu/emacs/windows/libxpm-3.5.8-w32-src.zip.sig"; // 96 bytes
+
             while (true)
             {
-                log.Info("Running download");
+                log.Info("Downloading " + url);
                 try
                 {
-                    //string url = "http://ftp.gnu.org/gnu/emacs/windows/libxpm-3.5.8-w32-src.zip"; // 1.4 MB
-                    //string url = "http://drillersdashboard.com/images/productivity-circle.png"; // 125 kB
-                    string url = "http://ftp.gnu.org/gnu/emacs/windows/libxpm-3.5.8-w32-src.zip.sig"; // 96 bytes
                     r = (HttpWebRequest)WebRequest.Create(url);
                     using (var resp = r.GetResponse())
                     using (var s = resp.GetResponseStream())
