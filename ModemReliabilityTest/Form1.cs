@@ -42,21 +42,37 @@ namespace ModemReliabilityTest
             timer.Enabled = false;
             foreach (string u in urls)
             {
-
-             try
-              {
-                r = (HttpWebRequest)WebRequest.Create(u);
-                using (var resp = r.GetResponse())
-                using (var s = resp.GetResponseStream())
-                using (var sr = new StreamReader(s))
+                if (u == url1)
                 {
-                    sr.ReadToEnd();
+                    this.dns_tot.Text = ((int)(int.Parse(this.dns_tot.Text) + 1)).ToString();
                 }
-            }
-            catch (Exception ex)
-            {
-                log.Error(ex);
-            }
+                else 
+                {
+                    this.ip_tot.Text = ((int)(int.Parse(this.ip_tot.Text) + 1)).ToString();
+                }
+                try
+                {
+                    r = (HttpWebRequest)WebRequest.Create(u);
+                    using (var resp = r.GetResponse())
+                    using (var s = resp.GetResponseStream())
+                    using (var sr = new StreamReader(s))
+                    {
+                        sr.ReadToEnd();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    if (u == url1)
+                    {
+                        this.dns_fail.Text = ((int)(int.Parse(this.dns_fail.Text) + 1)).ToString();
+                    }
+                    else
+                    {
+                        this.ip_fail.Text = ((int)(int.Parse(this.ip_fail.Text) + 1)).ToString();
+                    }
+
+                    log.Error(ex);
+                }
             }
             log.Info("Download complete");
             timer.Enabled = true;
